@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EndingPage">
+
+    <TextView
+        android:id="@+id/your_score"
+        android:layout_width="324dp"
+        android:layout_height="157dp"
+        android:fontFamily="casual"
+        android:text="Your score is:\n\nPet Tappy to play again!"
+        android:textColor="#454141"
+        android:textFontWeight="900"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <android.widget.Button
+        android:id="@+id/again"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="293dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/default2button"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="242dp"
+        app:layout_constraintBottom_toTopOf="@+id/final_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deafultscore"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/final_score"
+        android:layout_width="178dp"
+        android:layout_height="93dp"
+        android:fontFamily="casual"
+        android:text=" 32"
+        android:textColor="#454141"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
